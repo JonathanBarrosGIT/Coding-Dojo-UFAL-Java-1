@@ -9,8 +9,22 @@ public class Truck extends Vehicle {
     private String engine;
 
     public Truck(String model, String color, double cost, String capacity, String engine){
+        super(model, color, cost);
         this.capacity = capacity;
         this.engine = engine;
-        super(model, color, cost);
+    }
+
+    public String getCapacity(){
+        return capacity;
+    }
+
+    public String getEngine(){
+        return engine;
+    }
+
+    @Override
+    public String toString(){
+        return super.toString() + "Capacity: " + getCapacity() + "\n" +
+                "Engine: " + getEngine();
     }
 }

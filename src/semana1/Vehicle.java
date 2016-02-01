@@ -1,4 +1,6 @@
-package semana1; /**
+package semana1;
+
+/**
  * Created by JoãoGabriel on 25/01/2016.
  */
 import java.util.Scanner;
@@ -25,5 +27,11 @@ public abstract class Vehicle {
 
     public double getCost() {
         return cost;
+    }
+
+    public String toString(){
+        return "Model: " + getModel() + "\n" +
+                "Color: " + getColor() + "\n" +
+                "Cost: " + getCost() + "\n";
     }
 }
